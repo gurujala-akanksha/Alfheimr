@@ -1,0 +1,47 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0", 
+      "title": "Alfheimr",
+      "description": "APIs Doc"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "paths":{
+
+      "/productlist": {
+        "get": {
+          "tags": ["List Of Products"],
+          "description": "Get All Products except laptop and divided in two groups",
+          "parameters": [],
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+    }
+  }
+},
+"/placeorder": {
+  "post": {
+    "tags": ["Place Order"],
+    "description": "Create new Order",
+    "parameters": [
+      {
+        "name": "Place Order",
+        "in": "body",
+        "description": "Place Order"
+      }
+    ],
+    "produces": ["application/json"],
+    "responses": {
+      "200": {
+        "description": "Order Placed!!"
+      }
+}
+}
+}
+
+    }
+  
+}
